@@ -175,7 +175,7 @@ class ScrapeDataBuilder(prometheusConfig: PrometheusReporter.Configuration, envi
     label.map(validLabelChar)
 
   private def validLabelChar(char: Char): Char =
-    if(char.isLetterOrDigit || char == '_' || char == '-') char else '_'
+    if(char.isLetterOrDigit || char == '_') char else '_'
 
   private def validNameChar(char: Char): Char =
     if(char.isLetterOrDigit || char == '_' || char == ':') char else '_'

@@ -55,7 +55,7 @@ class ScrapeDataBuilderSpec extends WordSpec with Matchers {
           |# TYPE app:counter_one_seconds_total counter
           |app:counter_one_seconds_total{tag_with_dots="value"} 10.0
           |# TYPE gauge_one_seconds gauge
-          |gauge_one_seconds{tag-with-dashes="value"} 20.0
+          |gauge_one_seconds{tag_with_dashes="value"} 20.0
         """.stripMargin.trim()
       }
     }
